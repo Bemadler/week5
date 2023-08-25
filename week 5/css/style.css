@@ -1,40 +1,44 @@
+
 div {
     background-color: rgb(228, 182, 182);
     }
     #body {
         border: 1px solid pink;
-        width: 960;
-        height: 689;
+        width: 960px;
+        height: 689px;
     }
     .h1 {
-        display: block;
+        display: flex; 
         justify-content: center;
         align-items: center;
     }
 #main {
-    display: inline-block; 
+    display: block; float: left;
     width: 600px;
     height: 432px;
     font-size: 10px;
     border: 1px solid black;
     font-family: 'Times New Roman', Times, serif;
 }
-#sideblock {
-    margin-right: 10px;
-    width: 300px;
-    height: 400px;
-    font-family: 'Times New Roman', Times, serif;
-    display: inline-block;
-    border: 1px solid black;
-}
-.box {
-    align-items: flex-start;
-    display: inline-block;
+#content {
+    border: 1px solid red;
+    width: 500px;
+    height: 150px;
     flex-direction: row;
+    margin-top: 30%;
 }
+#sideblock {
+    width: 300px;
+    height: 432px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-flex;
+    border: 1px solid black;
+    align-self: start;
+}
+
 .box2 {
     border: 1px solid black;
-    width: 908px;
+    width: 903px;
     justify-content: space-around;
 }
 h3 {
@@ -45,13 +49,7 @@ h3 {
     margin: 10px;
     width: 150px;
 }
-#content {
-    border: 1px solid red;
-    width: 500px;
-    height: 150px;
-    flex-direction: row;
-    
-}
+
 h4 {
     border: 1px solid black;
     display: inline-block;
